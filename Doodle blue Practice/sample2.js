@@ -100,8 +100,34 @@ const user={
 //Nullish Coalescing Operator (??)
 const username=null
 const age=0
-const cite=undefined
+const city1=undefined
 
 console.log(username ?? "Guest") //if username is null or undefined, it will return "Guest"
 console.log(age ?? 18) //if age is null or undefined, it will return 18
-console.log(cite ?? "Chennai") //if cite is null or undefined, it will return "Chennai"
+console.log(city1 ?? "Chennai") //if city1 is null or undefined, it will return "Chennai"
+
+/*|| vs ??*/
+
+console.log(0||100);
+console.log(0??100);
+
+console.log(false||true)
+console.log(false??true)
+
+console.log(""??"Guest")
+console.log(""||"Guest")
+
+const a1= null
+const b1= undefined
+console.log(a1??18)
+
+const username1=null;
+const age1=0;
+const city2=undefined;
+
+console.log(username1||"Guest");
+console.log(age1||18);
+console.log(city2||"Chennai");
+
+
+
