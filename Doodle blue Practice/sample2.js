@@ -1,0 +1,106 @@
+let strong=[40,10,5,20,30]
+let res=strong.sort((a,b)=>a-b) //a-b = ascending, b-a = descending
+console.log(res)
+
+let numbers=[10,20,30,40]
+let res1=numbers.reduce((total,num)=>{return total+num},0) //total-accumulator, num-current value, 0-initial value
+console.log(res1) //without initial value, it will take the first element as initial value and start from second element
+
+let number=[10,20,30,40,50]
+let a=number.slice(1,3) //slice(start index, end index) - end index is not included
+let b=number.splice(2,1) //splice(start index, delete count) - it modifies the original array
+console.log(a)
+console.log(b)
+
+let arr=[10,20,15,5]
+let result=arr.some((n)=>{return n<30}) //some() - returns true if at least one element satisfies the condition
+console.log(result)
+
+let arr2=[10,50,15,5]
+let result2=arr2.every((n)=>{return n<30}) //every() - returns true if all elements satisfy the condition
+console.log(result2)
+
+const employees = {
+    name:"Neiran",
+    salary: 30000,
+};
+console.log(employees.name)
+console.log(employees["salary"])
+employees.salary=40000
+console.log(employees.salary)
+employees.city="Chennai"
+delete employees.city
+console.log(employees)
+
+const student = {
+    name: "Priya",
+    age: 20,
+    address: {
+        City: "Chennai",
+        State: "Tamil Nadu"
+    }
+}
+console.log(student.name)
+console.log(student["age"])
+console.log(student.address.City) 
+
+const {
+  name: studentName,
+  city="Chennai"
+}=student;
+console.log(studentName);
+console.log(city);
+
+const orginal={
+    name:"Neiran",
+    age:20,
+}
+const updated={
+    ...orginal,
+    age:21,
+    city:"Chennai"
+}
+console.log(orginal)
+console.log(updated)
+
+//spread - combine operators
+const personal={
+  name:"John",
+  age:30,
+}
+const professional={
+  company:"ABC Corp",
+  job:"Developer"
+}
+const combined={
+  ...personal,
+  ...professional
+}
+console.log(combined)
+
+//in array
+const first=[1,2,3]
+const second=[4,5,6]
+
+const combinedArray=[...first,...second]
+console.log(combinedArray)
+
+const copy =[...first]
+console.log(copy)
+
+//optional chaining
+const user={
+  name:"John",
+  address:{
+    city:"New York",
+    state:"NY"
+  }
+}
+
+//Nullish Coalescing Operator (??)
+const username=null
+const age=0
+const cite=undefined
+console.log(username ?? "Guest") //if username is null or undefined, it will return "Guest"
+console.log(age ?? 18) //if age is null or undefined, it will return 18
+console.log(cite ?? "Chennai") //if cite is null or undefined, it will return "Chennai"

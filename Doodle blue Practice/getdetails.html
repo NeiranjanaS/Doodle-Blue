@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Details</title>
+</head>
+<body>
+    <img src="SAEC Logo.png" alt="S A Engineering College" width="500" height="100">
+    <form action="/register" method="post">
+        <label for="name">Full Name:</label>
+        <input id="name" name="name" required><br><br>
+        <label for="age">Age:</label>
+        <input id="age" name="age" type="number" required><br><br>
+        <label for="dob">DoB:</label>
+        <input id="dob" name="dob" type="date" required><br><br>
+         <label for="gender">Gender:</label><br><br>
+        <input type="checkbox" id="female" name="female" value="female" />
+        <label for="female">Female</label><br><br>
+        <input type="checkbox" id="male" name="male" value="male" />
+        <label for="male">Male</label><br><br>
+        <label for="course">Course:</label>
+        <select id="course" name="course" required><br><br>
+            <option value="">Select a course</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+        </select><br><br>
+        <button type="submit" disabled>Register</button>
+    </form>
+</body>
+</html>
+
