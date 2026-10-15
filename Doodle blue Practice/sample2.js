@@ -121,6 +121,7 @@ const a1= null
 const b1= undefined
 console.log(a1??18)
 
+// ||
 const username1=null;
 const age1=0;
 const city2=undefined;
