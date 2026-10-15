@@ -101,6 +101,7 @@ const user={
 const username=null
 const age=0
 const cite=undefined
+
 console.log(username ?? "Guest") //if username is null or undefined, it will return "Guest"
 console.log(age ?? 18) //if age is null or undefined, it will return 18
 console.log(cite ?? "Chennai") //if cite is null or undefined, it will return "Chennai"
