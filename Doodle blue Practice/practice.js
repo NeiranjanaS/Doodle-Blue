@@ -10,3 +10,4 @@ setTimeout(()=>console.log("timer"),0) //Macrotask → timer
 Promise.resolve().then(()=>console.log("Promise")) //Microtask → Promise
 console.log("finish") //Synchronous
 
+
