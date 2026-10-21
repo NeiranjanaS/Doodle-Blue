@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses | CampusConnect Student Portal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="../course.js" defer></script>
 </head>
 
 <body>
@@ -28,11 +29,17 @@
                 <div><span class="eyebrow">SEMESTER 5 · 2026–27</span>
                     <h2>Enrolled courses</h2>
                     <p class="muted">Example course information for demonstration purposes.</p>
-                </div><span class="term-pill">6 SUBJECTS · 22 CREDITS</span>
+                </div>
+                <div class="course-tools">
+                    <label class="course-search" for="courseSearch">Search courses
+                        <input id="courseSearch" type="search" placeholder="Name or course code">
+                    </label>
+                    <span class="term-pill">6 SUBJECTS · 22 CREDITS</span>
+                </div>
             </div>
             <div class="course-grid">
                 <article class="course-card">
-                    <div class="course-top course-blue"><img class="course-image" src="../images/ML.jpg"
+                    <div class="course-top course-blue"><img class="course-image" src="images/ML.jpg"
                             alt="Machine learning illustration"><span class="course-code">CS501</span></div>
                     <div class="course-body"><span class="tag tag-blue">CORE</span>
                         <h3>Machine Learning</h3>
@@ -43,7 +50,7 @@
                     </div>
                 </article>
                 <article class="course-card">
-                    <div class="course-top course-green"><img class="course-image" src="../images/Database system.jpg"
+                    <div class="course-top course-green"><img class="course-image" src="images/Database system.jpg"
                             alt="Database systems illustration"><span class="course-code">CS502</span></div>
                     <div class="course-body"><span class="tag tag-green">CORE</span>
                         <h3>Database Systems</h3>
@@ -54,7 +61,7 @@
                     </div>
                 </article>
                 <article class="course-card">
-                    <div class="course-top course-orange"><img class="course-image" src="../images/CN.jpg"
+                    <div class="course-top course-orange"><img class="course-image" src="images/CN.jpg"
                             alt="Computer networks illustration"><span class="course-code">CS503</span></div>
                     <div class="course-body"><span class="tag tag-orange">CORE</span>
                         <h3>Computer Networks</h3>
@@ -65,7 +72,7 @@
                     </div>
                 </article>
                 <article class="course-card">
-                    <div class="course-top course-purple"><img class="course-image" src="../images/Cloud.png"
+                    <div class="course-top course-purple"><img class="course-image" src="images/Cloud.png"
                             alt="Cloud computing illustration"><span class="course-code">CS504</span></div>
                     <div class="course-body"><span class="tag tag-purple">CORE</span>
                         <h3>Cloud Computing</h3>
@@ -76,7 +83,7 @@
                     </div>
                 </article>
                 <article class="course-card">
-                    <div class="course-top course-pink"><img class="course-image" src="../images/PC.jpg"
+                    <div class="course-top course-pink"><img class="course-image" src="images/PC.jpg"
                             alt="Professional communication illustration"><span class="course-code">HS505</span></div>
                     <div class="course-body"><span class="tag tag-pink">ELECTIVE</span>
                         <h3>Professional Communication</h3>
@@ -87,7 +94,7 @@
                     </div>
                 </article>
                 <article class="course-card">
-                    <div class="course-top course-teal"><img class="course-image" src="../images/AI Lab.jpg"
+                    <div class="course-top course-teal"><img class="course-image" src="images/AI Lab.jpg"
                             alt="Artificial intelligence lab illustration"><span class="course-code">CS506</span></div>
                     <div class="course-body"><span class="tag tag-teal">PRACTICAL</span>
                         <h3>AI Lab</h3>
@@ -121,4 +128,5 @@
                 Achieve</span></div>
     </footer>
 </body>
-</html>      
+
+</html>
